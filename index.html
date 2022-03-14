@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Start Quiz Button-->
+    <div class="start_btn"><button onclick="start()" id="start_btn">Start Quiz</button></div>
+    <!--Info Box-->
+    <div class="info_box" id="info_box">
+        <div class="info_title">
+            <span>Some Information About Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. When question turn come the questioner will have to make quiz.</div>
+            <div class="info">2. You can't select any opion once time goes off.</div>
+            <div class="info">3. You can't exit from the quiz while you're playing.</div>
+            <div class="info">4. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit" onclick="exit()">Exit Quiz</button>
+            <button class="restart" onclick="con();">Continue</button>
+        </div>
+    </div>
+    <!--Player Name Box-->
+    <div class="player_name" id="player_name">
+        <header>
+            <span>Enter Player Name</span>
+        </header>
+        <div class="player_info">
+            <div class="player_1">
+                <span class="header_text">Enter Player One Name</span>
+                <br>
+                <label class="label-1">Enter Username:</label>
+                <br>
+                <input type="text" placeholder="Enter Here" class="player_1_input" id="player1">
+                <br>
+                <button class="confirm_btn_1" onclick="con1()" id="ok1">Confirm</button>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="player_2">
+                <span class="header_text">Enter Player two Name</span>
+                <br>
+                <label>Enter Username:</label>
+                <br>
+                <input type="text" placeholder="Enter Here" class="player_2_input" id="player2">
+                <br>
+                <button class="confirm_btn_2" onclick="con2()" id="ok2">Confirm</button>
+            </div>
+        </div>
+        <div class="buttons_player">
+            <button class="back" onclick="back()">Back</button>
+            <button class="next" onclick="next()">Continue</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
